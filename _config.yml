@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Yuhui Chen - 陈宇辉 # the website title (if blank, full name will be used instead)
 first_name: Yuhui
 middle_name: 
 last_name: Chen
@@ -85,7 +85,7 @@ kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-linkedin_username: # your LinkedIn user name
+linkedin_username: yuhui-chen2000 # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
 orcid_id: # your ORCID ID
@@ -111,7 +111,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  © Copyright 2024 Yuhui Chen. Template: [al-folio](https://github.com/alshedivat/al-folio).
+  © Copyright 2024 Yuhui Chen.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

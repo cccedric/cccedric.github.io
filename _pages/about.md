@@ -18,5 +18,7 @@ social: true # includes social icons at the bottom of the page
 
 Hi there! This is Yuhui Chen.
 
-I am a second-year D.Phil. student in Control Theory and Engineering at Institute of Automation, Chinese Academy of Sciences ([CASIA](https://www.ia.cas.cn/)) advised by Dongbin Zhao. Before joining CASIA, I obtained my B.Eng. degree in Information Engineering at Beijing Institute of Technology ([BIT](https://www.bit.edu.cn/)) and Electrical Communication Engineering at Australian National University ([ANU](https://www.anu.edu.au/)). 
+I am currently a second-year D.Phil. student in Control Theory and Engineering at the Institute of Automation, Chinese Academy of Sciences ([CASIA](https://www.ia.cas.cn/)), under the mentorship of Professor Dongbin Zhao. Prior to joining CASIA, I earned my B.Eng. degree in Information Engineering from Beijing Institute of Technology ([BIT](https://www.bit.edu.cn/)) and in Electrical Communication Engineering from Australian National University ([ANU](https://www.anu.edu.au/)).
+
+
 

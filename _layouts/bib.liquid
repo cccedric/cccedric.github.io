@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col col-sm-4 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -32,9 +32,10 @@
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {%
             include figure.liquid
+            width="280px"
             loading="eager"
             path=entry_path
-            sizes = "300px"
+            sizes = "1000px"
             class="preview z-depth-1 rounded"
             zoomable=true
             alt=entry.preview

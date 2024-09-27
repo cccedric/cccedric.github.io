@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Photographed at Victoria Harbour, Hong Kong.</p>
+    <p><i class="fa-solid fa-camera"></i> at Victoria Harbour, Hong Kong in 2023.</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

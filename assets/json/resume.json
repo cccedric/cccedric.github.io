@@ -1,26 +1,26 @@
 {
   "basics": {
-    "name": "Yuhui Chen",
+    "name": "Yuhui Chen, 陈宇辉",
     // "label": "Researcher",
     "image": "",
-    "email": "chen.yuhui.t@gmail.com",
+    "email": "chen.yuhui.t@gmail.com"
     // "phone": "+86 13610020598",
     // "url": "https://cccedric.github.io/#",
-    "summary": "Yuhui Chen is a Ph.D. student specializing in deep reinforcement learning and robotics control systems, with experience in embedded systems and offline reinforcement learning research.",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    // "summary": "",
+    // "location": {
+    //   "address": "2712 Broadway St",
+    //   "postalCode": "CA 94115",
+    //   "city": "San Francisco",
+    //   "countryCode": "US",
+    //   "region": "California"
+    // },
+    // "profiles": [
+    //   {
+    //     "network": "Twitter",
+    //     "username": "AlbertEinstein",
+    //     "url": "https://twitter.com/AlbertEinstein"
+    //   }
+    // ]
   },
   // "work": [
   //   {
@@ -52,7 +52,7 @@
   // ],
   "education": [
     {
-      "institution": "Chinese Academic of Science, Institution of Automation, 中科院自动化所",
+      "institution": " Chinese Academic of Science, Institution of Automation, 中科院自动化所",
       "location": "Beijing, China",
       "url": "http://www.ia.cas.cn/",
       "area": "Deep Reinforcement Learning and robot control",
@@ -61,29 +61,29 @@
       "endDate": "2027-06-01"
     },
     {
-      "institution": "Australian National University",
+      "institution": " Australian National University",
       "location": "Canberra, Australia",
       "url": "https://www.anu.edu.au/",
       "area": "Electronics and Communication Engineering",
       "studyType": "Upper Second Class Honours Bechalor Degree",
       "startDate": "2020-07-01",
       "endDate": "2022-05-01",
-      "score": "4.0/4.0"
+      "score": ", GPA: 4.0/4.0"
     },
     {
-      "institution": "Beijing Institute of Technology, 北京理工大学",
+      "institution": " Beijing Institute of Technology, 北京理工大学",
       "location": "Beijing, China",
       "url": "https://www.bit.edu.cn/",
       "area": "Information Engineering",
-      "studyType": "Bechalor Degree, Honor Graduate",
+      "studyType": "Bechalor Degree, Honors Graduate",
       "startDate": "2019-09-01",
       "endDate": "2022-06-01",
-      "score": "3.3/4.0"
+      "score": ", GPA: 3.3/4.0"
     }
   ],
   "experience": [
     {
-      "name": "Dajiang Innovations.",
+      "name": " Dajiang Innovations Technology Co., Ltd (DJI)",
       "location": "Shenzhen, China",
       "position": "MCU embedded engineer in R&D Center, Flight Dept.",
       "url": "https://www.dji.com/",
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "name": "Institute of Automation, Chinese Academy of Sciences",
+      "name": " Institute of Automation, Chinese Academy of Sciences",
       "location": "Beijing, China",
       "position": "Research Intern",
       "url": "http://www.ia.cas.cn/",
@@ -114,11 +114,11 @@
   ],
   // "awards": [
   //   {
-  //     "title": "Nobel Prize in Physics",
-  //     "date": "1921-11-01",
-  //     "awarder": "Royal Swedish Academy of Sciences",
+  //     "title": "Teli Honors Student",
+  //     "date": "2022-06-01",
+  //     "awarder": "Beijing Institute of Technology, 北京理工大学",
   //     "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-  //     "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+  //     "summary": ""
   //   }
   // ],
   // "certificates": [
@@ -157,7 +157,7 @@
     {
       "name": "Programming",
       "level": "",
-      "icon": "fa-solid fa-hashtag",
+      "icon": "fa-solid fa-code",
       "keywords": [
         "Python / Pytorch, Jax",
         "C/C++, ROS",
@@ -168,7 +168,7 @@
     {
       "name": "Software",
       "level": "",
-      "icon": "fa-solid fa-hashtag",
+      "icon": "fa-solid fa-laptop",
       "keywords": [
         "VSCode, Keil, vim, Gazebo, Anaconda",
         "Verilog HDL",

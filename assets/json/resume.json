@@ -1,11 +1,11 @@
 {
   "basics": {
-    "name": "Yuhui Chen, 陈宇辉",
+    "name": "Yuhui Chen",
     // "label": "Researcher",
     "image": "",
     "email": "chen.yuhui.t@gmail.com"
     // "phone": "+86 13610020598",
-    // "url": "https://cccedric.github.io/#",
+    // "url": "https://cccedric.github.io/#"
     // "summary": "",
     // "location": {
     //   "address": "2712 Broadway St",
@@ -52,11 +52,11 @@
   // ],
   "education": [
     {
-      "institution": " Chinese Academic of Science, Institution of Automation, 中科院自动化所",
+      "institution": " Chinese Academic of Science, Institution of Automation",
       "location": "Beijing, China",
       "url": "http://www.ia.cas.cn/",
       "area": "Deep Reinforcement Learning and robot control",
-      "studyType": "Ph.D degree",
+      "studyType": "Ph.D degree, supervised by Dongbin Zhao",
       "startDate": "2022-09-01",
       "endDate": "2027-06-01"
     },
@@ -71,7 +71,7 @@
       "score": ", GPA: 4.0/4.0"
     },
     {
-      "institution": " Beijing Institute of Technology, 北京理工大学",
+      "institution": " Beijing Institute of Technology",
       "location": "Beijing, China",
       "url": "https://www.bit.edu.cn/",
       "area": "Information Engineering",
@@ -112,15 +112,14 @@
       ]
     }
   ],
-  // "awards": [
-  //   {
-  //     "title": "Teli Honors Student",
-  //     "date": "2022-06-01",
-  //     "awarder": "Beijing Institute of Technology, 北京理工大学",
-  //     "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-  //     "summary": ""
-  //   }
-  // ],
+  "awards": [
+    {
+      "title": "Xuteli Graduates Award, Beijing Institute of Technology",
+      "date": "2022-06",
+      "awarder": "Beijing Institute of Technology",
+      "summary": ""
+    }
+  ],
   // "certificates": [
   //   {
   //     "name": "Machine Learning",

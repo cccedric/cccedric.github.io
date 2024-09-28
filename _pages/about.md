@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Institute of Automation, Chinese Academy of Sciences
+subtitle: Affiliations. Institute of Automation, Chinese Academy of Sciences
 
 profile:
   align: right

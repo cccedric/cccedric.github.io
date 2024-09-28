@@ -141,14 +141,12 @@
       "name": "Boosting continuous control with consistency policy",
       "publisher": "AAMAS 2024, oral speech",
       "releaseDate": "2024-05",
-      "url": "https://arxiv.org/abs/2310.06343",
       "summary": ""
     },
     {
       "name": "Generalizing Consistency Policy to Visual RL with Prioritized Proximal Experience Regularization",
       "publisher": "NIPS 2024, poster",
       "releaseDate": "2024-09",
-      "url": "https://openreview.net/forum?id=MOFwt8OeXr",
       "summary": ""
     }
   ],
@@ -206,7 +204,7 @@
       "icon": "fa-solid fa-tags",
       "keywords": [
         "Basketball, American Football",
-        "bycicle",
+        "Bicycle",
         "Skateboard, Ski"
       ]
     },

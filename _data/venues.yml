@@ -4,4 +4,8 @@
 
 "NIPS24":
   url: https://neurips.cc/
+  color: "#00369f"
+
+"Under Review":
+  url:
   color: "#DA70D6"

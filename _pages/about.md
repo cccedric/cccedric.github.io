@@ -2,7 +2,7 @@
 layout: about
 title: About me
 permalink: /
-subtitle: Affiliations. Institute of Automation, Chinese Academy of Sciences
+subtitle: Affiliations. Institute of Automation, Chinese Academy of Sciences.
 
 profile:
   align: right
@@ -16,9 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi there! This is Yuhui Chen.
-
-I am currently a third-year Ph.D student in Control Theory and Engineering at the Institute of Automation, Chinese Academy of Sciences ([CASIA](https://www.ia.cas.cn/)), supervised by Professor Dongbin Zhao.
+Hi there! This is Yuhui Chen. I am currently a third-year Ph.D student in Control Theory and Engineering at the Institute of Automation, Chinese Academy of Sciences ([CASIA](https://www.ia.cas.cn/)), supervised by Prof. [Dongbin Zhao](https://people.ucas.ac.cn/~zhaodongbin?language=en).
 
 My long-term goal is help building foundation models for embodied AI agent and use that to accelerate research in other fields. My research interests lie in offline reinforcement learning, reward engineering and robot learning, with a focus on sequence models and generative models in order to develop autonomous agents that are capable of understanding the open world, learning from previous behaviors, and interacting intelligently with humans.
 

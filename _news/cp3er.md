@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper about generalizing consistency policy for visual RL tasks ([CP3ER](https://openreview.net/pdf?id=MOFwt8OeXr)) was accepted to NIPS 2024.
+Our paper about generalizing consistency policy for visual RL tasks ([CP3ER](https://arxiv.org/abs/2410.00051)) was accepted to NIPS 2024.

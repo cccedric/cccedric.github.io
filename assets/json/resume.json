@@ -107,16 +107,23 @@
       "highlights": [
         "Developed a RTOS-based program for multi-task handling on a robot.",
         "Implemented Yolov3 for armor detection and tracking on Xavier.",
-        "Implemented a Kalman filter for real-time multi-sensor data fusion to achieve accurate robot positioning.",
-        "Won 1st prize in RMUA China and 2nd prize globally in the 2021 RoboMaster University AI Challenge."
+        "Implemented a Kalman filter for real-time multi-sensor data fusion to achieve accurate robot positioning."
       ]
     }
   ],
   "awards": [
     {
       "title": "Xuteli Graduates Award",
+      "url": "",
       "date": "2022-06",
       "awarder": "Beijing Institute of Technology",
+      "summary": ""
+    },
+    {
+      "title": "1st prize in RoboMaster University AI Challenge China (RMUA)  and 2nd prize in RMUA Global",
+      "url": "https://www.robomaster.com/en-US/robo/icra",
+      "date": "2022-03",
+      "awarder": "DJI RoboMaster Organizing Committee and the IEEE International Conference on Robotics and Automation",
       "summary": ""
     }
   ],
@@ -201,7 +208,7 @@
     },
     {
       "name": "Sport",
-      "icon": "fa-solid fa-tags",
+      "icon": "fa-solid fa-person-walking",
       "keywords": [
         "Basketball, American Football",
         "Bicycle",

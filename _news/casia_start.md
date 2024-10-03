@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I start to pursuing D.Phil. degree at CASIA.
+I start to pursuing Phd degree at CASIA.

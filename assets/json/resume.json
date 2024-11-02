@@ -113,7 +113,7 @@
   ],
   "awards": [
     {
-      "title": "AAMAS-24 Scholarship [$1000 US dollars]",
+      "title": "AAMAS-24 Scholarship [$1000]",
       "url": "",
       "date": "2024-05",
       "awarder": "ACM Special Interest Group on Artificial Intelligence (ACM SIGAI)",
@@ -123,7 +123,7 @@
       "title": "Xuteli Graduates Award",
       "url": "",
       "date": "2022-06",
-      "awarder": "Beijing Institute of Technology",
+      "awarder": "Beijing Institute of Technology (Top 5%)",
       "summary": ""
     },
     {
@@ -131,6 +131,13 @@
       "url": "https://www.robomaster.com/en-US/robo/icra",
       "date": "2022-03",
       "awarder": "DJI RoboMaster Organizing Committee and the IEEE International Conference on Robotics and Automation",
+      "summary": ""
+    },
+    {
+      "title": "Xuteli Scholarship [$1500]",
+      "url": "",
+      "date": "2019-06",
+      "awarder": "Beijing Institute of Technology (Top 3%)",
       "summary": ""
     }
   ],
@@ -151,6 +158,12 @@
   //   }
   // ],
   "publications": [
+    {
+      "name": "TeViR: Text-to-Video Reward with Diffusion Models for Efficient Reinforcement Learning",
+      "publisher": "Under review, submitted to IEEE TSMC",
+      "releaseDate": "2024-07",
+      "summary": ""
+    },
     {
       "name": "Boosting continuous control with consistency policy",
       "publisher": "AAMAS 2024, oral speech",

@@ -122,6 +122,23 @@ cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 google_site_verification: nTRIJAE9McdVgdt9pd8SG4wdWNYKmnYyPSkhgLU3frc # your google-site-verification ID (Google Search Console)
 bing_site_verification: F9856ABC3D99CC1534FE55CCBEEEAD24 # out your bing-site-verification ID (Bing Webmaster)
 
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+
+blog_name: Hello World! # blog_name will be displayed in your blog page
+blog_description: Welcome to my blog! # blog_description will be displayed in your blog page
+permalink: /blog/:year/:title/
+lsi: false # produce an index for related posts
+
+# Pagination
+pagination:
+  enabled: true
+
+related_blog_posts:
+  enabled: true
+  max_related: 3
+
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
@@ -252,8 +269,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
-display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
+display_tags: ["robotics", "reinforcement-learning"] # these tags will be displayed on the front page of your blog
+display_categories: ["papers"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

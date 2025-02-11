@@ -277,8 +277,8 @@ display_categories: ["papers"] # these categories will be displayed on the front
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Yuhui]
-  first_name: [Chen, C.]
+  last_name: [Chen, C.]
+  first_name: [Yuhui]
 
   style: apa
   locale: en

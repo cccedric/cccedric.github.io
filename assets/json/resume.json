@@ -159,6 +159,12 @@
   // ],
   "publications": [
     {
+      "name": "ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy",
+      "publisher": "Under review",
+      "releaseDate": "2025-01",
+      "summary": ""
+    },
+    {
       "name": "TeViR: Text-to-Video Reward with Diffusion Models for Efficient Reinforcement Learning",
       "publisher": "Under review, submitted to IEEE TSMC",
       "releaseDate": "2024-07",

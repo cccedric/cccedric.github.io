@@ -103,7 +103,7 @@ whatsapp_number: 8613610020598 # your WhatsApp number (full phone number in inte
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: # work page URL
-x_username: # your X handle
+x_username: cccedric2000 # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
@@ -126,7 +126,7 @@ bing_site_verification: F9856ABC3D99CC1534FE55CCBEEEAD24 # out your bing-site-ve
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Hello World! # blog_name will be displayed in your blog page
+blog_name: Hinc itur ad astra # blog_name will be displayed in your blog page
 blog_description: Welcome to my blog! # blog_description will be displayed in your blog page
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts

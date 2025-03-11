@@ -7,11 +7,22 @@
   author={Chen, Yuhui and Tian, Shuai and Zhou, Yingting and Liu, Shugao and Li, Haoran, and Zhao, Dongbin},
   preview={conRFT.png},
   year={2025},
-  month={Jan},
+  month={Feb},
   abstract={Vision-Language-Action (VLA) models have shown substantial potential in real-world robotic manipulation. However, fine-tuning these models through supervised learning struggles to achieve robust performance due to limited, inconsistent demonstrations, especially in contact-rich environments. In this paper, we propose a reinforced fine-tuning approach for VLA models, named ConRFT, which consists of offline and online fine-tuning with a unified consistency-based training objective, to address these challenges. In the offline stage, our method integrates behavior cloning and Q-learning to effectively extract policy from a small set of demonstrations and stabilize value estimating. In the online stage, the VLA model is further fine-tuned via consistency policy, with human interventions to ensure safe exploration and high sample efficiency. We evaluate our approach on eight diverse real-world manipulation tasks. It achieves an average success rate of 96.3 % within 45–90 minutes of online fine-tuning, outperforming prior supervised methods with a 144 % improvement in success rate and 1.9x shorter episode length. This work highlights the potential of integrating reinforcement learning to enhance the performance of VLA models for real-world robotic applications.},
   arxiv={2502.05450},
   website={https://cccedric.github.io/conrft/},
   google_scholar_id={UebtZRa9Y70C},
+  selected={true},
+}
+
+@unpublished{cui2025cl3r,
+  abbr={Under Review},
+  title={CL3R: 3D Reconstruction and Contrast Learning for Enhanced Robotic Manipulation Representations},
+  author={Cui, Wenbo and Zhao, Chengyang and Chen, Yuhui and Li, Haoran and Zhang, Zhizheng and Zhao, Dongbin and Wang, He},
+  preview={Cl3R.png},
+  year={2025},
+  month={Feb},
+  abstract={Building a robust perception module is crucial for visuomotor policy learning. While recent approaches incorporate pre-trained 2D foundation models into robotic perception modules to leverage their strong semantic understanding, they struggle to capture 3D spatial information and generalize across diverse camera viewpoints. These limitations hinder the policy's effectiveness, especially in fine-grained robotic manipulation scenarios. To address these challenges, we propose CL3R, a novel 3D pre-training framework designed to enhance robotic manipulation policies. Our method integrates both spatial awareness and semantic understanding by employing a point cloud Masked Autoencoder to learn rich 3D representations while leveraging pre-trained 2D foundation models through contrastive learning for efficient semantic knowledge transfer. Additionally, we mitigate camera view ambiguity by unifying the coordinate system across datasets and introduce a point cloud damping method to improve generalizability, enabling robust perception from novel camera viewpoints at test time. Extensive experiments in both simulation and the real world demonstrate the superiority of our method, highlighting its effectiveness in visuomotor policy learning for robotic manipulation.},
   selected={true},
 }
 

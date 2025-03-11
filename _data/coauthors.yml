@@ -1,11 +1,25 @@
-"Zhao":
-  - firstname: ["Dongbin"]
-    url: https://scholar.google.com/citations?user=RxvYlNQAAAAJ
+"Cui":
+  - firstname: ["Wenbo"]
+    url: https://scholar.google.com.hk/citations?user=IHB_8okAAAAJ
+
+"Jiang":
+  - firstname: ["Zhennan"]
+    url: https://jzndd.github.io/
 
 "Li":
   - firstname: ["Haoran"]
     url: https://scholar.google.com/citations?user=kalE5UIAAAAJ
 
-"Jiang":
-  - firstname: ["Zhennan"]
-    url: https://scholar.google.com/citations?user=-AHCSxIAAAAJ
+"Wang":
+  - firstname: ["He"]
+    url: https://hughw19.github.io/
+
+"Zhang":
+  - firstname: ["Zhizheng"]
+    url: https://scholar.google.com/citations?user=X7M0I8kAAAAJ
+
+"Zhao":
+  - firstname: ["Dongbin"]
+    url: https://scholar.google.com/citations?user=RxvYlNQAAAAJ
+  - firstname: ["Chengyang"]
+    url: https://chengyzhao.github.io/

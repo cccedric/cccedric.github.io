@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 3
-cv_pdf: Yuhui_Chen_CV1.pdf
+cv_pdf: Yuhui Chen_CV_20250311.pdf
 description: 
 
 toc:

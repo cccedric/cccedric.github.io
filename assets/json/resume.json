@@ -113,17 +113,17 @@
   ],
   "awards": [
     {
-      "title": "AAMAS-24 Scholarship [$1000]",
+      "title": "AAMAS-24 Scholarship",
       "url": "",
       "date": "2024-05",
       "awarder": "ACM Special Interest Group on Artificial Intelligence (ACM SIGAI)",
       "summary": ""
     },
     {
-      "title": "Xuteli Graduates Award",
+      "title": "Xuteli Graduates Award (Top 5%)",
       "url": "",
       "date": "2022-06",
-      "awarder": "Beijing Institute of Technology (Top 5%)",
+      "awarder": "Beijing Institute of Technology",
       "summary": ""
     },
     {
@@ -134,10 +134,10 @@
       "summary": ""
     },
     {
-      "title": "Xuteli Scholarship [$1500]",
+      "title": "Xuteli Scholarship (Top 3%)",
       "url": "",
       "date": "2019-06",
-      "awarder": "Beijing Institute of Technology (Top 3%)",
+      "awarder": "Beijing Institute of Technology",
       "summary": ""
     }
   ],
@@ -161,7 +161,13 @@
     {
       "name": "ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy",
       "publisher": "Under review",
-      "releaseDate": "2025-01",
+      "releaseDate": "2025-02",
+      "summary": ""
+    },
+    {
+      "name": "CL3R: 3D Reconstruction and Contrast Learning for Enhanced Robotic Manipulation Representations",
+      "publisher": "Under review",
+      "releaseDate": "2025-02",
       "summary": ""
     },
     {
@@ -172,13 +178,13 @@
     },
     {
       "name": "Boosting continuous control with consistency policy",
-      "publisher": "AAMAS 2024, oral speech",
+      "publisher": "AAMAS 2024, Oral",
       "releaseDate": "2024-05",
       "summary": ""
     },
     {
       "name": "Generalizing Consistency Policy to Visual RL with Prioritized Proximal Experience Regularization",
-      "publisher": "NIPS 2024, poster",
+      "publisher": "NIPS 2024, Poster",
       "releaseDate": "2024-09",
       "summary": ""
     }

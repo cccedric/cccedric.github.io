@@ -1,9 +1,31 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"Under Review":
+  url:
+  color: "#DA70D6"
+
+"AAMAS 2024 Oral":
+  url: https://www.aamas2024-conference.auckland.ac.nz/
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"AAMAS 2026":
+  url: https://cyprusconferences.org/aamas2026/
+  color: "#00369f"
 
-"Vision":
-  color: "#009f36"
+"Acta Automatica Sinica (自动化学报)":
+  url: https://www.aas.net.cn/
+  color: "#00369f"
+
+"ICRA 2026":
+  url: https://2026.ieee-icra.org/
+  color: "#00369f"
+
+"IEEE TSMC":
+  url: https://www.ieeesmc.org/publications/transactions-on-smc-systems/
+  color: "#00369f"
+
+"NeurIPS 2024":
+  url: https://neurips.cc/Conferences/2024
+  color: "#00369f"
+
+"RSS 2025":
+  url: https://roboticsconference.org/
+  color: "#00369f"

@@ -1,17 +1,15 @@
 ---
 layout: about
-title: about
+title: About me
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Affiliations. Institute of Automation, Chinese Academy of Sciences.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic1.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><i class="fa-solid fa-camera"></i> at <a href="https://maps.app.goo.gl/iXr15xAcV5ATRTZi9">Wall Street, New York</a> in 2024.</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -19,7 +17,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
@@ -27,8 +25,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi there! This is Yuhui Chen. I am currently a third-year Ph.D student in Control Theory and Engineering at the Institute of Automation, Chinese Academy of Sciences ([CASIA](https://www.ia.cas.cn/)), supervised by Prof. [Dongbin Zhao](https://people.ucas.ac.cn/~zhaodongbin?language=en) and Prof. [Haoran Li](https://people.ucas.edu.cn/~lihaoran2023).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research sits at Embodied AI, Reinforcement Learning, and Foundation Models. I am particularly interested in building models that are not only general-purpose but also capable of continuous adaptation and precise physical interaction in real-world. My long-term goal is to equip autonomous agents with the ability to understand the open world, learn from prior experiences, and interact intelligently with humans. Currently, I am working through:
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+1. VLA & Foundation Models: Developing unified model architectures for robotic manipulation that integrate spatial perception and 3D reasoning.
+2. Reinforcement Fine-Tuning & Continual Learning: Bridging the gap between large-scale pre-training and downstream task-specific performance with reinforced post-training and enabling robots learn continuously without knowledge forgetting.
+3. Generative World Models as Simulators: Leveraging Diffusion and Video Generation models to provide dense rewards and structural guidance for sample-efficient robot learning.
+
+Prior to joining CASIA, I was a MCU embedded engineer at Dajiang Innovations ([DJI](https://www.dji.com/)). I hold a B.Eng. degree in Information Engineering from Beijing Institute of Technology ([BIT](https://www.bit.edu.cn/)) and a B.Eng. in Electrical Communication Engineering from the Australian National University ([ANU](https://www.anu.edu.au/)).
+

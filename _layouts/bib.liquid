@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col col-sm-4 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -34,7 +34,7 @@
             include figure.liquid
             loading="eager"
             path=entry_path
-            sizes = "200px"
+            sizes = "1000px"
             class="preview z-depth-1 rounded"
             zoomable=true
             avoid_scaling=true
@@ -68,7 +68,7 @@
           {% endif %}
         {%- endif -%}
         {% assign coauthor_url = null %}
-        {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+        {%- assign clean_last_name = author_last_name | remove_accents -%}
         {% if site.data.coauthors[clean_last_name] %}
           {%- for coauthor in site.data.coauthors[clean_last_name] -%}
             {% if coauthor.firstname contains author.first %}
@@ -373,7 +373,11 @@
       <!-- Hidden abstract block -->
       <div class="abstract hidden">
         <p>{{ entry.abstract }}</p>
+        {% if entry.cn_abstract %}
+          <p>{{ entry.cn_abstract }}</p>
+        {% endif %}
       </div>
+
     {% endif %}
 
     {% if entry.bibtex_show %}

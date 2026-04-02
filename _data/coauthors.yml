@@ -1,34 +1,41 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Jiang":
+  - firstname: ["Zhennan"]
+    url: https://jzndd.github.io/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Li":
+  - firstname: ["Haoran"]
+    url: https://scholar.google.com/citations?user=kalE5UIAAAAJ
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Wang":
+  - firstname: ["He"]
+    url: https://scholar.google.com/citations?user=roCAWkoAAAAJ
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Wen":
+  - firstname: ["Haowei"]
+    url: https://scholar.google.com/citations?user=rgdlKpQAAAAJ
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Yu":
+  - firstname: ["Chao"]
+    url: https://scholar.google.com/citations?user=BYoq_bwAAAAJ
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Zhang":
+  - firstname: ["Zhengtao"]
+    url: https://scholar.google.com/citations?user=k1IruYkAAAAJ
+  - firstname: ["Zhizheng"]
+    url: https://scholar.google.com/citations?user=X7M0I8kAAAAJ
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Zhao":
+  - firstname: ["Dongbin"]
+    url: https://scholar.google.com/citations?user=RxvYlNQAAAAJ
+  - firstname: ["Chengyang"]
+    url: https://chengyzhao.github.io/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Zheng":
+  - firstname: ["Yupeng"]
+    url: https://scholar.google.com/citations?user=anGhGdYAAAAJ&hl=en&oi=ao
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Zhou":
+  - firstname: ["Mingcai"]
+    url: https://scholar.google.com/citations?hl=en&user=WinBwasAAAAJ
+
+

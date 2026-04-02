@@ -33,7 +33,7 @@ layout: default
           %}
         {% endif %}
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+          <div class="more-info" style="font-size: 0.85rem; text-align: center">{{ page.profile.more_info }}</div>
         {% endif %}
       </div>
     {% endif %}
@@ -43,25 +43,32 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
-      {% include news.liquid limit=true %}
+      <div style="text-align: justify;">
+        {% include news.liquid limit=true %}
+      </div>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
       </h2>
-      {% include latest_posts.liquid %}
+      <div style="text-align: justify;">
+        {% include latest_posts.liquid %}
+      </div>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+      <div style="text-align: right; margin-top: 10px;">
+        <a href="{{ '/publications/' | relative_url }}">Full List of Publications <i class="fas fa-arrow-right"></i></a>
+      </div>
     {% endif %}
 
     <!-- Social -->

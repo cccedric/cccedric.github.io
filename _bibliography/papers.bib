@@ -17,6 +17,19 @@
   selected={true},
 }
 
+@unpublished{chen2026pocp,
+  abbr={Under Review},
+  title={Posterior Optimization with Clipped Objective for Bridging Efficiency and Stability in Generative Policy Learning},
+  author={Chen, Yuhui and Li, Haoran and Jiang, Zhennan and Qin, Yuxing and Wan, Yuxuan and Liu, Weiheng and Zhao, Dongbin},
+  preview={POCO.png},
+  year={2026},
+  month={Apr},
+  abstract={Expressive generative models have advanced robotic manipulation by capturing complex, multi-modal action distributions over temporally extended trajectories. However, fine-tuning these policies via RL remains challenging due to instability and sample inefficiency. We introduce Posterior Optimization with Clipped Objective (POCO), a principled RL framework that formulates policy improvement as a posterior inference problem tailored for temporal action chunks. Through an Expectation-Maximization procedure, POCO distills a reward-weighted implicit posterior into the policy without likelihood estimation. Furthermore, POCO adopts an offline-to-online paradigm that anchors online exploration to pre-trained priors, and its model-agnostic design scales to fine-tune large VLA models without architectural modifications. Evaluations across 7 simulation benchmarks and 4 contact-rich real-world tasks demonstrate that POCO prevents catastrophic policy collapse, outperforms SOTA baselines, and achieves a 96.7\% success rate on real-world tasks.},
+  arxiv={2604.01860},
+  website={https://cccedric.github.io/poco/},
+  selected={true},
+}
+
 @inproceedings{chen2025conrft,
   abbr={RSS 2025},
   title={ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy},

@@ -23,9 +23,13 @@
   color: "#00369f"
 
 "NeurIPS 2024":
-  url: https://neurips.cc/Conferences/2024
+  url: https://neurips.cc/Conferences/2024/
   color: "#00369f"
 
 "RSS 2025":
+  url: https://roboticsconference.org/2025/
+  color: "#00369f"
+
+"RSS 2026":
   url: https://roboticsconference.org/
   color: "#00369f"

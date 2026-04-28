@@ -78,6 +78,17 @@ ninja.data = [{
             window.location.href = "/blog/2024/clash/";
           
         },
+      },{id: "post-linux-配置-miniconda",
+        
+          title: "Linux 配置 Miniconda",
+        
+        description: "介绍如何在 linux 上配置 Miniconda",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/conda/";
+          
+        },
       },{id: "post-boosting-continuous-control-with-consistency-policy",
         
           title: "Boosting Continuous Control with Consistency Policy",

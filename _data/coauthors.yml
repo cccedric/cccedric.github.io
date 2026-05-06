@@ -6,6 +6,10 @@
   - firstname: ["Haoran"]
     url: https://scholar.google.com/citations?user=kalE5UIAAAAJ
 
+"Liu":
+  - firstname: ["Yuan"]
+    url: https://scholar.google.com/citations?user=vAohKSQAAAAJ
+
 "Wang":
   - firstname: ["He"]
     url: https://scholar.google.com/citations?user=roCAWkoAAAAJ
@@ -32,10 +36,12 @@
 
 "Zheng":
   - firstname: ["Yupeng"]
-    url: https://scholar.google.com/citations?user=anGhGdYAAAAJ&hl=en&oi=ao
+    url: https://scholar.google.com/citations?user=anGhGdYAAAAJ
 
 "Zhou":
   - firstname: ["Mingcai"]
-    url: https://scholar.google.com/citations?hl=en&user=WinBwasAAAAJ
+    url: https://scholar.google.com/citations?user=WinBwasAAAAJ
+  - firstname: ["Shangqing"]
+    url: https://scholar.google.com/citations?user=uKty_kQAAAAJ
 
 

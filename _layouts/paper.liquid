@@ -15,28 +15,30 @@ layout: default_paper
 {% assign url_beginning = page.url | slice: 0, 6 %}
 
 <div class="post">
-  <header class="post-header">
+  <header class="post-header paper-post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     {% if page.proceedings %}
-      <p class="post-header">
+      <p class="paper-proceedings">
         {{ page.proceedings }}
       </p>
     {% endif %}
-    {% for author in page.authors %}
-      {% if author.link %}
-        <a href="{{ author.link }}" target="_blank" rel="noopener">{{ author.name }}</a>
-      {% else %}
-        {{ author.name }}
-      {% endif %}
-      {% if author.affiliation_ids %}
-        <sup>
-          {%- for aff_id in author.affiliation_ids -%}
-            {{ aff_id }}{%- unless forloop.last %},{% endunless %}
-          {%- endfor -%}
-        </sup>
-      {% endif %}
-      {% unless forloop.last %}, {% endunless %}
-    {% endfor %}
+    <div class="paper-authors">
+      {% for author in page.authors %}
+        {% if author.link %}
+          <a href="{{ author.link }}" target="_blank" rel="noopener">{{ author.name }}</a>
+        {% else %}
+          {{ author.name }}
+        {% endif %}
+        {% if author.affiliation_ids %}
+          <sup>
+            {%- for aff_id in author.affiliation_ids -%}
+              {{ aff_id }}{%- unless forloop.last %},{% endunless %}
+            {%- endfor -%}
+          </sup>
+        {% endif %}
+        {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </div>
     {% if page.affiliations %}
       <div class="paper-affiliations">
         {% for aff in page.affiliations %}
@@ -54,14 +56,14 @@ layout: default_paper
       <hr>
     {% endif %}
     <div id="markdown-content">
-    <div class="social-links" style="margin-top: 20px;">
+    <div class="social-links paper-actions">
       {% if page.pdf_link %}
-      <a href="{{ page.pdf_link }}" target="_blank" class="social-icon" title="Paper PDF">
+      <a href="{{ page.pdf_link }}" target="_blank" class="social-icon paper-action" title="Paper PDF">
         <i class="fas fa-file-pdf"></i> Paper  
       </a>
       {% endif %}
       {% if page.github_link %}
-      <a href="{{ page.github_link }}" target="_blank" class="social-icon" title="GitHub Repo">
+      <a href="{{ page.github_link }}" target="_blank" class="social-icon paper-action" title="GitHub Repo">
         <i class="fab fa-github"></i> Code  
       </a>
       {% endif %}

@@ -1,35 +1,35 @@
 "Under Review":
   url:
-  color: "#DA70D6"
+  color: "#7c63d9"
 
 "AAMAS 2024 Oral":
   url: https://www.aamas2024-conference.auckland.ac.nz/
-  color: "#00369f"
+  color: "#2f5fb8"
 
 "AAMAS 2026":
   url: https://cyprusconferences.org/aamas2026/
-  color: "#00369f"
+  color: "#2f5fb8"
 
 "Acta Automatica Sinica (自动化学报)":
   url: https://www.aas.net.cn/
-  color: "#00369f"
+  color: "#2f5fb8"
 
 "ICRA 2026":
   url: https://2026.ieee-icra.org/
-  color: "#00369f"
+  color: "#2f5fb8"
 
 "IEEE TSMC":
   url: https://www.ieeesmc.org/publications/transactions-on-smc-systems/
-  color: "#00369f"
+  color: "#2f5fb8"
 
 "NeurIPS 2024":
   url: https://neurips.cc/Conferences/2024/
-  color: "#00369f"
+  color: "#2f5fb8"
 
 "RSS 2025":
   url: https://roboticsconference.org/2025/
-  color: "#00369f"
+  color: "#2f5fb8"
 
 "RSS 2026":
   url: https://roboticsconference.org/
-  color: "#00369f"
+  color: "#2f5fb8"

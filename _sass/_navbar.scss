@@ -7,14 +7,19 @@
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: var(--global-navbar-bg-color);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  opacity: 1;
 }
 
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
-  background-color: var(--global-bg-color);
-  border: 1px solid var(--global-divider-color);
+  background-color: var(--global-surface-color-elevated);
+  border: 1px solid var(--global-control-border-color);
+  border-radius: var(--global-top-frame-radius);
+  box-shadow: var(--global-card-shadow);
+  padding: 0.5rem;
 
   a:not(.active) {
     color: var(--global-text-color);
@@ -22,6 +27,8 @@
 
   a:hover {
     color: var(--global-hover-color);
+    background-color: var(--global-bg-color-secondary);
+    border-radius: calc(var(--global-top-frame-radius) - 0.08rem);
   }
 
   .dropdown-divider {
@@ -31,20 +38,22 @@
 
 .dropdown-item {
   color: var(--global-text-color);
+  border-radius: calc(var(--global-top-frame-radius) - 0.08rem);
+  padding: 0.55rem 0.85rem;
 
   &:hover {
     color: var(--global-hover-color);
-    background-color: var(--global-bg-color);
+    background-color: var(--global-bg-color-secondary);
   }
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
-  background-color: var(--global-hover-color);
-  color: var(--global-hover-text-color) !important;
+  background-color: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+  color: var(--global-theme-color) !important;
 
   &:hover {
-    color: var(--global-hover-text-color);
+    color: var(--global-theme-color);
   }
 }
 
@@ -61,15 +70,25 @@
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    border: 1px solid transparent;
+    border-radius: var(--global-top-frame-radius);
+    padding: 0.45rem 0.9rem;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
 
     &:hover {
       color: var(--global-hover-color);
+      background-color: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
+      border-color: var(--global-divider-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
-    background-color: inherit;
-    font-weight: bolder;
+    background-color: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+    border-color: color-mix(in srgb, var(--global-theme-color) 20%, transparent);
+    font-weight: 600;
     color: var(--global-theme-color);
 
     &:hover {
@@ -116,6 +135,11 @@
 }
 
 .navbar-toggler {
+  border: 1px solid var(--global-control-border-color);
+  border-radius: var(--global-top-frame-radius);
+  padding: 0.45rem 0.55rem;
+  background-color: var(--global-control-bg-color);
+
   .icon-bar {
     display: block;
     width: 22px;
@@ -157,8 +181,8 @@
 
 #light-toggle {
   padding: 0;
-  border: 0;
-  background-color: inherit;
+  border: 1px solid var(--global-control-border-color);
+  background-color: var(--global-control-bg-color);
   color: var(--global-text-color);
   /* Fix footprint to prevent navbar shifting when icon changes */
   width: 2rem;
@@ -166,9 +190,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--global-top-frame-radius);
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 
   &:hover {
     color: var(--global-hover-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
+    border-color: var(--global-divider-color-strong);
   }
 }
 
@@ -180,11 +211,23 @@
 
 #search-toggle {
   padding: 0;
-  border: 0;
-  background-color: inherit;
+  border: 1px solid var(--global-control-border-color);
+  background-color: var(--global-control-bg-color);
   color: var(--global-text-color);
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--global-top-frame-radius);
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 
   &:hover {
     color: var(--global-hover-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
+    border-color: var(--global-divider-color-strong);
   }
 }

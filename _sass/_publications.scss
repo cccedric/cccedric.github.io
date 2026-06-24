@@ -5,29 +5,32 @@
 @use "variables" as v;
 
 .publications {
-  margin-top: 2rem;
+  margin-top: var(--global-space-6);
+  --publication-card-radius: 1rem;
+  --publication-inner-radius: 0.8rem;
+  --publication-badge-radius: var(--global-top-frame-radius);
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.75em;
+    margin-bottom: 0.85em;
   }
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 
     span {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
+    padding-top: var(--global-space-4);
+    margin-top: var(--global-space-7);
     text-align: right;
   }
 
@@ -37,147 +40,294 @@
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: var(--global-space-5);
+      padding: 1rem 1.1rem 0.35rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: var(--publication-card-radius);
+      background: var(--global-card-bg-color);
+      box-shadow: var(--global-card-shadow);
+      transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
 
-      .preview {
-        display: inline-block;
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--global-card-shadow-hover);
+        border-color: var(--global-divider-color-strong);
+      }
+    }
+
+    .publication-card {
+      row-gap: 0.9rem;
+      align-items: stretch;
+    }
+
+    .publication-media {
+      display: flex;
+      height: 100%;
+    }
+
+    .publication-media-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    .publication-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 1.85rem;
+      width: fit-content;
+      max-width: 100%;
+      padding: 0.3rem 0.55rem;
+      border-radius: var(--publication-badge-radius);
+      background-color: color-mix(in srgb, var(--global-theme-color) 72%, transparent);
+      color: var(--global-hover-text-color) !important;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      backdrop-filter: blur(10px) saturate(140%);
+      -webkit-backdrop-filter: blur(10px) saturate(140%);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+
+      a,
+      div {
+        color: inherit;
+
+        &:hover {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .publication-preview {
+      width: 100%;
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .publication-badge-separated {
+      width: fit-content;
+    }
+
+    .publication-preview-media {
+      aspect-ratio: 2 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      border-radius: var(--publication-inner-radius);
+      background: transparent;
+      overflow: hidden;
+    }
+
+    .publication-preview-media figure,
+    .publication-preview-media picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    .preview {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      border-radius: calc(var(--publication-inner-radius) - 2px);
+    }
+
+    .publication-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      height: 100%;
+      min-width: 0;
+    }
+
+    .publication-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      margin-top: auto;
+      padding-top: 0.1rem;
+    }
+
+    .title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      margin-bottom: 0;
+    }
+
+    .author {
+      color: var(--global-text-color-light);
+      font-size: 0.95rem;
+      line-height: 1.55;
+
+      a {
+        border-bottom: 0;
+        color: inherit;
+
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
       }
 
-      .abbr {
-        margin-bottom: 0.5rem;
-
-        abbr {
-          display: inline-block;
-          background-color: var(--global-theme-color);
-          margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
-
-          a {
-            color: white;
-
-            &:hover {
-              text-decoration: none;
-            }
-          }
-        }
-
-        .award {
-          color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
-        }
+      > em {
+        border-bottom: 0;
+        font-style: normal;
+        font-weight: 700;
       }
 
-      .title {
-        font-weight: bolder;
-      }
+      > span.more-authors {
+        color: var(--global-text-color-light);
+        border-bottom: 1px dashed var(--global-text-color-light);
+        cursor: pointer;
 
-      .author {
-        a {
-          border-bottom: 1px dashed var(--global-theme-color);
-
-          &:hover {
-            border-bottom-style: solid;
-            text-decoration: none;
-          }
-        }
-
-        > em {
-          border-bottom: 1px solid;
-          font-style: normal;
-        }
-
-        > span.more-authors {
-          color: var(--global-text-color-light);
-          border-bottom: 1px dashed var(--global-text-color-light);
-          cursor: pointer;
-
-          &:hover {
-            color: var(--global-text-color);
-            border-bottom: 1px dashed var(--global-text-color);
-          }
-        }
-      }
-
-      .links {
-        a.btn {
+        &:hover {
           color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          margin-left: 0;
-
-          &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
-          }
+          border-bottom: 1px dashed var(--global-text-color);
         }
-        a.award.btn {
-          border-color: var(--global-highlight-color);
-        }
-      }
-
-      .badges {
-        padding-bottom: 0.5rem;
-        span {
-          display: inline-block;
-          color: v.$black-color;
-          height: 100%;
-          padding-right: 0.5rem;
-          vertical-align: middle;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-
-      .hidden {
-        font-size: 0.875rem;
-        max-height: 0px;
-        overflow: hidden;
-        text-align: justify;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
-
-        p {
-          line-height: 1.4em;
-          margin: 10px;
-        }
-
-        pre {
-          font-size: 1em;
-          line-height: 1.4em;
-          padding: 10px;
-        }
-      }
-
-      .hidden.open {
-        max-height: 100em;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
-      }
-
-      div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
-      }
-
-      div.abstract.hidden.open {
-        border-color: var(--global-text-color);
       }
     }
+
+    .periodical {
+      color: var(--global-text-color-light);
+      font-size: 0.875rem;
+      line-height: 1.45;
+
+      em {
+        color: var(--global-text-color);
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+
+    .publication-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      padding-top: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      a.btn {
+        margin-left: 0;
+        min-height: 1.9rem;
+        padding: 0.35rem 0.7rem;
+        font-size: 0.78rem;
+        line-height: 1;
+        border-radius: 0.45rem;
+      }
+
+      a.award.btn {
+        border-color: var(--global-highlight-color);
+      }
+    }
+
+    .publication-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+      span {
+        display: inline-flex;
+        align-items: center;
+        color: v.$black-color;
+        height: 100%;
+        vertical-align: middle;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .hidden {
+      font-size: 0.875rem;
+      max-height: 0;
+      overflow: hidden;
+      text-align: justify;
+      border-radius: var(--publication-inner-radius);
+      background: var(--global-bg-color-secondary);
+      transition: all 0.18s ease;
+
+      p {
+        line-height: 1.55;
+        margin: 0;
+        padding: var(--global-space-4);
+      }
+
+      pre {
+        font-size: 1em;
+        line-height: 1.4em;
+        margin: 0;
+        padding: var(--global-space-4);
+      }
+    }
+
+    .hidden.open {
+      max-height: 100em;
+      margin-top: var(--global-space-2);
+    }
+
+    div.abstract.hidden {
+      border: 0;
+    }
+
+    div.abstract.hidden.open {
+      border-color: var(--global-divider-color-strong);
+      border-style: solid;
+      border-width: 1px;
+    }
+
     div.award.hidden {
-      border: dashed 1px var(--global-bg-color);
+      border: 0;
     }
+
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
+      border-style: solid;
+      border-width: 1px;
+    }
+
+    div.bibtex.hidden.open {
+      border: 1px solid var(--global-divider-color);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .publications {
+    ol.bibliography {
+      li {
+        padding: 0.9rem 0.95rem 0.5rem;
+      }
+
+      .publication-card {
+        row-gap: var(--global-space-3);
+      }
+
+      .publication-preview-media {
+        aspect-ratio: 2 / 1;
+      }
     }
   }
 }

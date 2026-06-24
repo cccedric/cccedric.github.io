@@ -32,24 +32,140 @@ ul.task-list input[type="checkbox"] {
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: var(--global-text-color-light);
 }
 
 // Card
 
 .card {
   background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: var(--global-radius-lg);
+  box-shadow: var(--global-card-shadow);
+  overflow: hidden;
+  transition:
+    transform 0.24s ease,
+    box-shadow 0.24s ease,
+    border-color 0.24s ease,
+    background-color 0.24s ease;
 
   .card-img {
     width: 100%;
-    padding-top: 1.25rem;
+    height: 100%;
+    object-fit: cover;
   }
 
   .card-title {
     color: var(--global-text-color);
+    margin-bottom: var(--global-space-2);
+    letter-spacing: -0.02em;
   }
 
   .card-body {
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding: var(--global-space-5);
+  }
+
+  .card-text {
+    color: var(--global-text-color-light);
+    margin-bottom: 0;
+  }
+}
+
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.card.hoverable:hover,
+a:hover .card.hoverable {
+  transform: translateY(-4px);
+  box-shadow: var(--global-card-shadow-hover);
+  border-color: var(--global-divider-color-strong);
+}
+
+.list-group-item {
+  background-color: transparent;
+  border-color: var(--global-divider-color);
+  padding: var(--global-space-3) 0;
+}
+
+.badge {
+  border-radius: var(--global-radius-pill);
+  padding: 0.35rem 0.75rem;
+  font-weight: 600;
+}
+
+.btn,
+button.btn,
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 2.75rem;
+  padding: 0.7rem 1.15rem;
+  border-radius: var(--global-radius-pill);
+  border: 1px solid var(--global-control-border-color);
+  background-color: var(--global-control-bg-color);
+  color: var(--global-text-color);
+  box-shadow: none;
+  font-weight: 500;
+  line-height: 1.1;
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    border-color: var(--global-divider-color-strong);
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--global-theme-color) 16%, transparent);
+  }
+}
+
+.btn-sm {
+  min-height: 2.25rem;
+  padding: 0.55rem 0.95rem;
+  font-size: 0.875rem;
+}
+
+.btn-primary,
+.newsletter-form-button,
+.newsletter-loading-button {
+  background-color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  color: var(--global-hover-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--global-hover-color);
+    border-color: var(--global-hover-color);
+    color: var(--global-hover-text-color);
+  }
+}
+
+.btn-secondary,
+.btn-outline-secondary,
+.btn-outline-primary,
+.btn:not(.btn-link):not(.btn-primary):not(.newsletter-form-button):not(.newsletter-loading-button) {
+  background-color: var(--global-control-bg-color);
+  border-color: var(--global-control-border-color);
+  color: var(--global-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--global-bg-color-secondary);
+    border-color: var(--global-divider-color-strong);
+    color: var(--global-theme-color);
   }
 }
 
@@ -102,6 +218,8 @@ ul.task-list input[type="checkbox"] {
     .list-group-item {
       background-color: inherit;
       border-color: var(--global-divider-color);
+      padding-right: 0;
+      padding-left: 0;
 
       .badge {
         color: var(--global-card-bg-color) !important;
@@ -154,8 +272,8 @@ ul.task-list input[type="checkbox"] {
   h2.category {
     color: var(--global-divider-color);
     border-bottom: 1px solid var(--global-divider-color);
-    padding-top: 0.5rem;
-    margin-top: 2rem;
+    padding-top: var(--global-space-2);
+    margin-top: var(--global-space-6);
     margin-bottom: 1rem;
     text-align: right;
   }

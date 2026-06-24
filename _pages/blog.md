@@ -23,7 +23,7 @@ pagination:
 
 {% if blog_name_size > 0 or blog_description_size > 0 %}
 
-  <div class="header-bar">
+  <div class="header-bar blog-hero">
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
   </div>
@@ -62,7 +62,7 @@ pagination:
 
 <div class="container featured-posts">
 {% assign is_even = featured_posts.size | modulo: 2 %}
-<div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
+<div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %} featured-posts-grid">
 {% for post in featured_posts %}
 <div class="col mb-4">
 <a href="{{ post.url | relative_url }}">
@@ -120,12 +120,12 @@ pagination:
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
 
-    <li>
+    <li class="post-list-item">
 
 {% if post.thumbnail %}
 
-<div class="row">
-          <div class="col-sm-9">
+<div class="row align-items-center post-list-row">
+          <div class="col-sm-8 post-list-main">
 {% endif %}
         <h3>
         {% if post.redirect == blank %}
@@ -139,7 +139,7 @@ pagination:
           <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
         {% endif %}
       </h3>
-      <p>{{ post.description }}</p>
+      <p class="post-description-text">{{ post.description }}</p>
       <p class="post-meta">
         {{ read_time }} min read &nbsp; &middot; &nbsp;
         {{ post.date | date: '%B %d, %Y' }}
@@ -178,8 +178,10 @@ pagination:
 
 </div>
 
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
+  <div class="col-sm-4 post-list-thumb-col">
+    <div class="post-list-thumb-wrap">
+      <img class="post-list-thumb" src="{{ post.thumbnail | relative_url }}" alt="image">
+    </div>
   </div>
 </div>
 {% endif %}

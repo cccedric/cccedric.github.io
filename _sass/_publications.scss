@@ -237,6 +237,61 @@
       a.award.btn {
         border-color: var(--global-highlight-color);
       }
+
+      a.publication-metric {
+        display: inline-flex;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+        overflow: hidden;
+        border-color: var(--global-divider-color);
+        background: var(--global-bg-color-secondary);
+        color: var(--global-text-color);
+
+        &:hover {
+          border-color: var(--global-divider-color-strong);
+          background: color-mix(in srgb, var(--global-theme-color) 6%, var(--global-bg-color-secondary));
+          box-shadow: 0 8px 20px color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+          text-decoration: none;
+        }
+
+        &:focus,
+        &:focus-visible {
+          outline: none;
+          box-shadow: 0 0 0 4px color-mix(in srgb, var(--global-theme-color) 14%, transparent);
+        }
+      }
+
+      .publication-metric-label,
+      .publication-metric-value {
+        display: inline-flex;
+        align-items: center;
+        min-height: 100%;
+        padding: 0.34rem 0.72rem;
+        font-size: 0.78rem;
+        font-weight: 600;
+        line-height: 1;
+        white-space: nowrap;
+      }
+
+      .publication-metric-label {
+        gap: 0.4rem;
+        color: var(--global-theme-color);
+        background: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
+
+        .ai {
+          font-size: 0.95rem;
+          line-height: 1;
+        }
+      }
+
+      .publication-metric-value {
+        border-left: 1px solid color-mix(in srgb, var(--global-divider-color-strong) 85%, transparent);
+        color: var(--global-text-color);
+        background: transparent;
+        min-width: 2.4rem;
+        justify-content: center;
+      }
     }
 
     .publication-badges {
@@ -257,6 +312,10 @@
         &:hover {
           text-decoration: underline;
         }
+      }
+
+      a {
+        text-decoration: none;
       }
     }
 

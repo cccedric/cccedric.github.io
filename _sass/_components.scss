@@ -184,6 +184,45 @@ a.btn {
       margin: 0;
     }
   }
+
+  .social.profile-social {
+    margin-top: 0;
+    margin-bottom: var(--global-space-3);
+
+    .contact-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.35rem;
+      font-size: 2.35rem;
+
+      a {
+        line-height: 1;
+
+        img {
+          width: 2rem;
+          height: 2rem;
+          margin-bottom: 0;
+        }
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+          margin-bottom: 0;
+
+          image {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+
+    .contact-note {
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+    }
+  }
 }
 
 .profile.float-right {

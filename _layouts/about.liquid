@@ -35,6 +35,12 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info" style="font-size: 0.85rem; text-align: center">{{ page.profile.more_info }}</div>
         {% endif %}
+        {% if page.social %}
+          <div class="social profile-social">
+            <div class="contact-icons">{% social_links %}</div>
+            <div class="contact-note">{{ site.contact_note }}</div>
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 
@@ -68,15 +74,6 @@ layout: default
       {% include selected_papers.liquid %}
       <div style="text-align: right; margin-top: 10px;">
         <a href="{{ '/publications/' | relative_url }}">Full List of Publications <i class="fas fa-arrow-right"></i></a>
-      </div>
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
 

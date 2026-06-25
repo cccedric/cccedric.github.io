@@ -1,3 +1,51 @@
 metadata:
-  last_updated: "1970-01-01"
-papers: {}
+  last_updated: '2026-06-25'
+papers:
+  dtqKvlEAAAAJ:35N4QoGY0k4C:
+    citations: 0
+    title: Posterior Optimization with Clipped Objective for Bridging Efficiency and Stability in Generative Policy Learning
+    year: '2026'
+  dtqKvlEAAAAJ:70eg2SAEIzsC:
+    citations: 3
+    title: "\u9762\u5411\u5177\u8EAB\u64CD\u4F5C\u7684\u89C6\u89C9\u2212 \u8BED\u8A00\u2212 \u52A8\u4F5C\u6A21\u578B\u7EFC\u8FF0"
+    year: '2026'
+  dtqKvlEAAAAJ:BqipwSGYUEgC:
+    citations: 3
+    title: 'CLAR: Learning 3D Representations for Robotic Manipulation by Fusing Masked Reconstruction with Multi-Level Contrastive Alignment'
+    year: '2025'
+  dtqKvlEAAAAJ:J_g5lzvAfSwC:
+    citations: 17
+    title: Survey of Vision-Language-Action Models for Embodied Manipulation
+    year: '2025'
+  dtqKvlEAAAAJ:O3NaXMp0MMsC:
+    citations: 12
+    title: 'QDepth-VLA: Quantized Depth Prediction as Auxiliary Supervision for Vision-Language-Action Models'
+    year: '2025'
+  dtqKvlEAAAAJ:RYcK_YlVTxYC:
+    citations: 5
+    title: 'Towards Long-Lived Robots: Continual Learning VLA Models via Reinforcement Fine-Tuning'
+    year: '2026'
+  dtqKvlEAAAAJ:UebtZRa9Y70C:
+    citations: 126
+    title: 'ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy'
+    year: '2025'
+  dtqKvlEAAAAJ:YFjsv_pBGBYC:
+    citations: 12
+    title: 'TeViR: Text-to-Video Reward with Diffusion Models for Efficient Reinforcement Learning'
+    year: '2025'
+  dtqKvlEAAAAJ:lSLTfruPkqcC:
+    citations: 0
+    title: Dual-Granularity Contrastive Reward via Generated Episodic Guidance for Efficient Embodied RL
+    year: '2026'
+  dtqKvlEAAAAJ:u-x6o8ySG0sC:
+    citations: 15
+    title: Generalizing Consistency Policy to Visual RL with Prioritized Proximal Experience Regularization
+    year: '2024'
+  dtqKvlEAAAAJ:u5HHmVD_uO8C:
+    citations: 61
+    title: Boosting Continuous Control with Consistency Policy
+    year: '2023'
+  dtqKvlEAAAAJ:vV6vV6tmYwMC:
+    citations: 20
+    title: 'WoVR: World Models as Reliable Simulators for Post-training VLA Policies with RL'
+    year: '2026'

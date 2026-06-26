@@ -320,13 +320,12 @@
     }
 
     .hidden {
+      display: none;
       font-size: 0.875rem;
-      max-height: 0;
       overflow: hidden;
       text-align: justify;
       border-radius: var(--publication-inner-radius);
       background: var(--global-bg-color-secondary);
-      transition: all 0.18s ease;
 
       p {
         line-height: 1.55;
@@ -343,7 +342,7 @@
     }
 
     .hidden.open {
-      max-height: 100em;
+      display: block;
       margin-top: var(--global-space-2);
     }
 

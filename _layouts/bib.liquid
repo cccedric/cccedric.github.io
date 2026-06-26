@@ -1,15 +1,17 @@
 ---
 ---
-<div class="row publication-card">
+<div class="row publication-card" style="margin-left: 0; margin-right: 0;">
   {% if site.enable_publication_thumbnails %}
     <div class="col-12 col-sm-4 publication-media">
       <div class="publication-media-inner">
         {%- if entry.abbr -%}
-          {%- if site.data.venues[entry.abbr] -%}
-            {% assign venue_style = null %}
-            {% if site.data.venues[entry.abbr].color != blank %}
-              {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-            {%- endif -%}
+          {% capture venue_style %}
+            style="width: 20rem; max-width: 100%; margin-left: auto; margin-right: auto; justify-content: center; text-align: center; box-shadow: none;"
+          {% endcapture %}
+          {%- if site.data.venues[entry.abbr] and site.data.venues[entry.abbr].color != blank -%}
+            {% capture venue_style %}
+              style="width: 20rem; max-width: 100%; margin-left: auto; margin-right: auto; justify-content: center; text-align: center; background-color: color-mix(in srgb, {{ site.data.venues[entry.abbr].color }} 14%, transparent); border: 1px solid color-mix(in srgb, {{ site.data.venues[entry.abbr].color }} 26%, transparent); color: {{ site.data.venues[entry.abbr].color }} !important; box-shadow: none;"
+            {% endcapture %}
           {%- endif -%}
         {% endif %}
         {% if entry.preview %}
@@ -48,7 +50,7 @@
           </div>
         {% elsif entry.abbr %}
           <abbr
-            class="badge publication-badge w-100"
+            class="badge publication-badge publication-badge-separated"
             {% if venue_style %}
               {{ venue_style }}
             {% endif -%}
@@ -70,7 +72,14 @@
     class="{% if site.enable_publication_thumbnails %}col-12 col-sm-8{% else %}col-12 col-sm-10{% endif %} publication-content"
   >
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title">
+      <div>{{ entry.title }}</div>
+      {% if entry.cn_title %}
+        <div style="margin-top: 0.35rem; font-size: 0.92em; font-weight: 500; color: var(--global-text-color-light);">
+          {{ entry.cn_title }}
+        </div>
+      {% endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -388,38 +397,38 @@
       {% endif %}
     </div>
 
-    {% if entry.award %}
-      <!-- Hidden Award block -->
-      <div class="award hidden d-print-inline">
-        <p>{{ entry.award | markdownify }}</p>
-      </div>
-    {% endif %}
-
-    {% if entry.abstract %}
-      <!-- Hidden abstract block -->
-      <div class="abstract hidden">
-        <p>{{ entry.abstract }}</p>
-        {% if entry.cn_abstract %}
-          <p>{{ entry.cn_abstract }}</p>
-        {% endif %}
-      </div>
-
-    {% endif %}
-
-    {% if entry.bibtex_show %}
-      <!-- Hidden bibtex block -->
-      <div class="bibtex hidden">
-        {% highlight bibtex %}
-        {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
-      </div>
-    {% endif %}
-
-    {% if entry.video and site.enable_video_embedding %}
-      <!-- Hidden video block -->
-      <div class="video hidden">
-        <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
-      </div>
-    {% endif %}
   </div>
+
+  {% if entry.award %}
+    <!-- Hidden Award block -->
+    <div class="award hidden d-print-inline col-12" style="margin-bottom: 0.75rem;">
+      <p>{{ entry.award | markdownify }}</p>
+    </div>
+  {% endif %}
+
+  {% if entry.abstract %}
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden col-12" style="margin-bottom: 0.75rem;">
+      <p{% if entry.cn_abstract %} style="padding: var(--global-space-4) var(--global-space-4) var(--global-space-2);"{% endif %}>{{ entry.abstract }}</p>
+      {% if entry.cn_abstract %}
+        <p style="padding: 0 var(--global-space-4) var(--global-space-4);">{{ entry.cn_abstract }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if entry.bibtex_show %}
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden col-12" style="margin-bottom: 0.75rem;">
+      {% highlight bibtex %}
+      {{- entry.bibtex | hideCustomBibtex -}}
+      {% endhighlight %}
+    </div>
+  {% endif %}
+
+  {% if entry.video and site.enable_video_embedding %}
+    <!-- Hidden video block -->
+    <div class="video hidden col-12" style="margin-bottom: 0.75rem;">
+      <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
+    </div>
+  {% endif %}
 </div>

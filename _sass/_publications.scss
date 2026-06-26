@@ -347,11 +347,13 @@
       margin-top: var(--global-space-2);
     }
 
-    div.abstract.hidden {
+    div.abstract.hidden,
+    div.video.hidden {
       border: 0;
     }
 
-    div.abstract.hidden.open {
+    div.abstract.hidden.open,
+    div.video.hidden.open {
       border-color: var(--global-divider-color-strong);
       border-style: solid;
       border-width: 1px;

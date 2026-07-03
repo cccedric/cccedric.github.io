@@ -142,8 +142,8 @@ layout: default
           {% assign section_title = section_pair[0] %}
           {% assign section_entries = section_pair[1] %}
 
-          {% comment %} Skip Experience and Volunteer as we've already processed them combined {% endcomment %}
-          {% if section_title == 'Experience' or section_title == 'Volunteer' %}
+          {% comment %} Skip sections handled elsewhere or intentionally hidden {% endcomment %}
+          {% if section_title == 'Experience' or section_title == 'Volunteer' or section_title == 'Projects' or section_title == 'Open Source Projects' %}
             {% continue %}
           {% endif %}
 
@@ -172,9 +172,6 @@ layout: default
               {% elsif section_title == 'Certificates' %}
                 {% assign entries = section_entries %}
                 {% include cv/certificates.liquid %}
-              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
-                {% assign entries = section_entries %}
-                {% include cv/projects.liquid %}
               {% elsif section_title == 'References' %}
                 {% assign entries = section_entries %}
                 {% include cv/references.liquid %}
@@ -356,18 +353,6 @@ layout: default
             <div>
               {% assign entries = site.data.resume.certificates %}
               {% include cv/certificates.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        <!-- Projects -->
-        {% if site.data.resume.projects.size > 0 %}
-          <a class="anchor" id="projects"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Projects</h3>
-            <div>
-              {% assign entries = site.data.resume.projects %}
-              {% include cv/projects.liquid %}
             </div>
           </div>
         {% endif %}

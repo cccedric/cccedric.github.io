@@ -25,13 +25,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! This is Yuhui Chen. I am currently a third-year Ph.D student in Control Theory and Engineering at the Institute of Automation, Chinese Academy of Sciences ([CASIA](https://www.ia.cas.cn/)), supervised by Prof. [Dongbin Zhao](https://people.ucas.ac.cn/~zhaodongbin?language=en) and Prof. [Haoran Li](https://people.ucas.edu.cn/~lihaoran2023).
+Hi there! I am Yuhui Chen, a third-year Ph.D. student in Control Theory and Engineering at the Institute of Automation, Chinese Academy of Sciences ([CASIA](https://www.ia.cas.cn/)), advised by Prof. [Dongbin Zhao](https://people.ucas.ac.cn/~zhaodongbin?language=en) and Prof. [Haoran Li](https://people.ucas.edu.cn/~lihaoran2023).
 
-My research sits at Embodied AI, Reinforcement Learning, and Foundation Models. I am particularly interested in building models that are not only general-purpose but also capable of continuous adaptation and precise physical interaction in real-world. My long-term goal is to equip autonomous agents with the ability to understand the open world, learn from prior experiences, and interact intelligently with humans. Currently, I am working through:
+My research interests lie in Embodied AI, Reinforcement Learning, and Foundation Models, with a focus on building robotic systems that can adapt continuously and interact with the physical world effectively.
 
-1. VLA & Foundation Models: Developing unified model architectures for robotic manipulation that integrate spatial perception and 3D reasoning.
-2. Reinforcement Fine-Tuning & Continual Learning: Bridging the gap between large-scale pre-training and downstream task-specific performance with reinforced post-training and enabling robots learn continuously without knowledge forgetting.
-3. Generative World Models as Simulators: Leveraging Diffusion and Video Generation models to provide dense rewards and structural guidance for sample-efficient robot learning.
+Currently, my research focuses on:
 
-Prior to joining CASIA, I was a MCU embedded engineer at Dajiang Innovations ([DJI](https://www.dji.com/)). I hold a B.Eng. degree in Information Engineering from Beijing Institute of Technology ([BIT](https://www.bit.edu.cn/)) and a B.Eng. in Electrical Communication Engineering from the Australian National University ([ANU](https://www.anu.edu.au/)).
+1. VLA & Foundation Models: Unified architectures for robotic manipulation with spatial perception and 3D reasoning.
+2. Reinforcement Fine-Tuning & Continual Learning: Reinforcement-based post-training and continual robot learning without catastrophic forgetting.
+3. Generative World Models as Simulators: Diffusion and video generation models for sample-efficient robot learning.
 
+Before joining CASIA, I worked as an MCU embedded engineer at Dajiang Innovations ([DJI](https://www.dji.com/)). I received B.Eng. degrees from Beijing Institute of Technology ([BIT](https://www.bit.edu.cn/)) and the Australian National University ([ANU](https://www.anu.edu.au/)).

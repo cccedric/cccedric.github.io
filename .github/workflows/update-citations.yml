@@ -2,9 +2,7 @@ name: Update Google Scholar Citations
 
 on:
   schedule:
-    - cron: "0 0 * * 1" # Monday
-    - cron: "0 0 * * 3" # Wednesday
-    - cron: "0 0 * * 5" # Friday
+    - cron: "0 0 * * *" # Daily
   workflow_dispatch:
 
 jobs:
@@ -49,12 +47,15 @@ jobs:
           set +e
           echo "🚀 Running citation update script (single attempt)..."
           start_time=$(date)
-          timeout 90 python bin/update_scholar_citations.py
+          timeout 90 python -u bin/update_scholar_citations.py
           status=$?
           end_time=$(date)
           if [ $status -eq 0 ]; then
             echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
             echo "✅ Citation update succeeded." >> $GITHUB_STEP_SUMMARY
+          elif [ $status -eq 124 ]; then
+            echo "⚠️ Citation update timed out after 90 seconds (started at $start_time, ended at $end_time). This usually means Google Scholar blocked the GitHub runner IP."
+            echo "⚠️ Citation update timed out after 90 seconds. Google Scholar may have blocked the GitHub runner IP." >> $GITHUB_STEP_SUMMARY
           else
             echo "❌ Citation update script failed with exit code $status (started at $start_time, ended at $end_time)."
             echo "❌ Citation update script failed with exit code $status." >> $GITHUB_STEP_SUMMARY

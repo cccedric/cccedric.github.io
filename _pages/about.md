@@ -35,4 +35,4 @@ Currently, my research focuses on:
 2. Reinforcement Fine-Tuning & Continual Learning: Reinforcement-based post-training and continual robot learning without catastrophic forgetting.
 3. Generative World Models as Simulators: Diffusion and video generation models for sample-efficient robot learning.
 
-I previously interned as an Algorithm Engineer with [Seed Robotics](https://seed.bytedance.com/en/direction/robotics), ByteDance. Before joining CASIA, I worked as an MCU embedded engineer at Dajiang Innovations ([DJI](https://www.dji.com/)). I received B.Eng. degrees from Beijing Institute of Technology ([BIT](https://www.bit.edu.cn/)) and the Australian National University ([ANU](https://www.anu.edu.au/)).
+I previously interned as an Algorithm Engineer with [Seed Robotics](https://seed.bytedance.com/en/direction/robotics) at ByteDance. Before joining CASIA, I worked as an MCU embedded engineer at Dajiang Innovations ([DJI](https://www.dji.com/)). I received B.Eng. degrees from Beijing Institute of Technology ([BIT](https://www.bit.edu.cn/)) and the Australian National University ([ANU](https://www.anu.edu.au/)).

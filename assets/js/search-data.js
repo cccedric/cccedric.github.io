@@ -127,6 +127,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-about-on-policy-reinforced-fine-tuning-vlas-for-continual-learning-lifelong-rft-was-accepted-to-rss-2026",
           title: 'Our paper about on-policy reinforced fine-tuning VLAs for continual learning (LifeLong-RFT) was accepted...',
           description: "",
+          section: "News",},{id: "news-our-paper-about-using-world-models-as-simulators-for-rl-policy-optimization-wovr-was-accepted-to-corl-2026",
+          title: 'Our paper about using world models as simulators for RL policy optimization (WoVR)...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',

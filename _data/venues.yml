@@ -26,6 +26,10 @@
   url: https://www.ieeesmc.org/publications/transactions-on-smc-systems/
   color: "#2f5fb8"
 
+"IEEE TRO":
+  url: https://www.ieee.org/publications_standards/publications/tro/tro_home.html
+  color: "#2f5fb8"
+
 "NeurIPS 2024":
   url: https://neurips.cc/Conferences/2024/
   color: "#2f5fb8"

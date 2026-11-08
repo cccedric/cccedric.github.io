@@ -18,23 +18,10 @@
   selected={true},
 }
 
-@unpublished{jiang2026beyond,
-  abbr={Under Review},
-  title={Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies},
-  author={Jiang, Zhennan and Xie, Tingying and Ji, Shilong and Yu, Shu'ang and Zhou, Tianxing and Chen, Yuhui and Gao, Jiahuan and Xie, Kaizhi and Xu, Yuanfan and Gao, Feng and others},
-  preview={POCO.png},
-  year={2026},
-  month={Nov},
-  abstract={Vision-language-action (VLA) policies can handle noncritical stages of long-horizon manipulation yet fail during short precision-critical phases. Lightweight reinforcement learning (RL) specialists can address these failures without directly applying RL to the full VLA, but retain auxiliary controllers and switching mechanisms at deployment. We study how to transfer their capabilities into a single flow-matching VLA. Direct imitation of specialist rollouts can reproduce action jitter and leave the VLA unprepared for states encountered during its own execution. We introduce REPAIR, a value-guided distillation framework that combines offline initialization with on-policy refinement. At each critical-phase observation, REPAIR queries the corresponding specialist for multiple action candidates and weights them using its critic to construct a supervision distribution. A shared weighted flow-matching objective trains the VLA first on observations from specialist-assisted rollouts, then on observations collected through its own execution. Specialists provide supervision without taking control during on-policy collection and are removed at deployment. Across six real-robot tasks with 30 evaluation trials per task, REPAIR achieves 100% success on all six tasks, with lower mean end-effector jerk than specialist-assisted execution on every task.},
-  arxiv={2611.02777},
-  google_scholar_id={2P1L_qKh6hAC},
-  selected={false},
-}
-
 @unpublished{chen2026poco,
-  abbr={Under Review},
+  abbr={IEEE TRO},
   title={Posterior Optimization with Clipped Objective for Bridging Efficiency and Stability in Generative Policy Learning},
-  author={Chen, Yuhui and Li, Haoran and Jiang, Zhennan and Qin, Yuxing and Wan, Yuxuan and Liu, Weiheng and Zhao, Dongbin},
+  author={Chen, Yuhui and Jiang, Zhennan and Qin, Yuxing and Wan, Yuxuan and Liu, Weiheng and Li, Haoran and Zhao, Dongbin},
   preview={POCO.png},
   year={2026},
   month={Apr},
@@ -43,6 +30,19 @@
   google_scholar_id={35N4QoGY0k4C},
   website={https://cccedric.github.io/poco/},
   selected={true},
+}
+
+@unpublished{jiang2026beyond,
+  abbr={Under Review},
+  title={Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies},
+  author={Jiang, Zhennan and Xie, Tingying and Ji, Shilong and Yu, Shu'ang and Zhou, Tianxing and Chen, Yuhui and Gao, Jiahuan and Xie, Kaizhi and Xu, Yuanfan and Gao, Feng and Wang, Yu and Li, Haoran and Zhao, Dongbin and Yu, Chao},
+  preview={REPAIR.png},
+  year={2026},
+  month={Nov},
+  abstract={Vision-language-action (VLA) policies can handle noncritical stages of long-horizon manipulation yet fail during short precision-critical phases. Lightweight reinforcement learning (RL) specialists can address these failures without directly applying RL to the full VLA, but retain auxiliary controllers and switching mechanisms at deployment. We study how to transfer their capabilities into a single flow-matching VLA. Direct imitation of specialist rollouts can reproduce action jitter and leave the VLA unprepared for states encountered during its own execution. We introduce REPAIR, a value-guided distillation framework that combines offline initialization with on-policy refinement. At each critical-phase observation, REPAIR queries the corresponding specialist for multiple action candidates and weights them using its critic to construct a supervision distribution. A shared weighted flow-matching objective trains the VLA first on observations from specialist-assisted rollouts, then on observations collected through its own execution. Specialists provide supervision without taking control during on-policy collection and are removed at deployment. Across six real-robot tasks with 30 evaluation trials per task, REPAIR achieves 100% success on all six tasks, with lower mean end-effector jerk than specialist-assisted execution on every task.},
+  arxiv={2611.02777},
+  google_scholar_id={2P1L_qKh6hAC},
+  selected={false},
 }
 
 @inproceedings{chen2025conrft,

@@ -130,6 +130,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-about-using-world-models-as-simulators-for-rl-policy-optimization-wovr-was-accepted-to-corl-2026",
           title: 'Our paper about using world models as simulators for RL policy optimization (WoVR)...',
           description: "",
+          section: "News",},{id: "news-our-paper-on-efficient-and-stable-generative-policy-learning-poco-was-accepted-to-ieee-transactions-on-robotics-t-ro",
+          title: 'Our paper on efficient and stable generative policy learning (POCO) was accepted to...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
